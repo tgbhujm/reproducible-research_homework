@@ -30,18 +30,18 @@ The table also has 13 columns covering different viral characteristics: Family, 
 V = βL^α is a multiplicative equation – therefore, it becomes linear when it is log-transformed. The base is not relevant, so we can arbitrarily choose the natural log (ln). The transformation will yield the equation lnV = ln(βL^α), equivalent to lnV = lnβ + ln(L^α), equivalent to lnV = lnβ + αlnL. This means that when you estimate α and β, you can predict lnV from lnL (hence V from L), using a linear equation.
 * Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
   
-lnV = lnβ + αlnL is a linear equation where α is the slope and lnβ the intercept. We can use linear regression to model the equation. When running the summary function on the lm(lnV ~ lnL), we get 1.5152 as a value for the exponent α (slope), and 7.0748 as a value for lnβ (intercept). Therefore, the scaling factor β is e^7.0748 = 1181.8071. When rounded, both α and β match the values in Table 2 of the paper by Cui et al., 2014 for dsDNA viruses: α = 1.52, β = 1182.
+lnV = lnβ + αlnL is a linear equation where α is the slope and lnβ the intercept. We can use linear regression to model the equation. When running the summary function on the lm(lnV ~ lnL), we get 1.5152 as a value for the exponent α (slope), and 7.0748 as a value for lnβ (intercept). Therefore, the scaling factor β is e^7.0748 = 1181.8071. When rounded, both α and β match the values in Table 2 of the paper by Cui et al., 2014 for dsDNA viruses: α = 1.52, β = 1182.  
 The p-values from the model are 2.28e-10 for the intercept (lnβ), and 6.44e-10 for the slope (α). Both values are statistically significant, because they are well below the threshold of 0.05 (which is usually used for analyzing biological data).
 * Write the code to reproduce the figure shown below. (10 points)  
   
-ggplot(data = cui_new, aes(x = lnL, y = lnV))+
-  geom_point()+
-  ylim(8.5,20.4)+
-  labs(x = "log [Genome length (kb)]", y = "log [Virion volume (nm3)]")+
-  theme_bw()+
-  theme(axis.title.x = element_text(face="bold", size = 9.5),
-        axis.title.y = element_text(face="bold", size = 9.5))+
-  geom_smooth(method = "lm", size = 0.6, fullrange = TRUE)
+ggplot(data = cui_new, aes(x = lnL, y = lnV))+  
+  geom_point()+  
+  ylim(8.5,20.4)+  
+  labs(x = "log [Genome length (kb)]", y = "log [Virion volume (nm3)]")+  
+  theme_bw()+  
+  theme(axis.title.x = element_text(face="bold", size = 9.5),  
+        axis.title.y = element_text(face="bold", size = 9.5))+  
+  geom_smooth(method = "lm", size = 0.6, fullrange = TRUE)  
 * What is the estimated volume of a 300 kb dsDNA virus? (4 points)
   
 Using the equation V = βL^α, and the values α = 1.52, β = 1182 for the exponent and scaling factor respectively, we can estimate the volume of a dsDNA virus with a 300 kb long genome:  
