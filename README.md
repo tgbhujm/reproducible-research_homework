@@ -52,6 +52,8 @@ The resulting figure is as shown:
 Using the equation V = βL^α, and the values α = 1.52, β = 1182 for the exponent and scaling factor respectively, we can estimate the volume of a dsDNA virus with a 300 kb long genome:  
 V = βL^α => V = 1182 x 300^1.52 => V = 6 884 014.62 nm3
 
+
+
 BONUS QUESTION (10 points):  
 * Explain the diﬀerence between reproducibility and replicability in scientiﬁc research. How can git and GitHub be used to enhance the reproducibility and replicability of your work? what limitations do they have? (e.g. check the platform protocols.io).
 
@@ -64,6 +66,7 @@ The features of git and GitHub that enhance research reproducibility and replica
 * the main body of the project can remain unaltered until the researcher is certain that their analysis works. In other words, one can “branch” the repository so that there are multiple versions. The researcher can work on one of the branches, so if mistakes are made, there is always the main branch that one can go back to.  
 * the repository can be shared among collaborators. This means that multiple individuals can work with the same data/analysis simultaneously, greatly contributing to both the reproducibility and the replicability of the work. If collaborators were storing their progress solely on their own device, it would likely not be in a format that is suited to multiple users (e.g., the read.csv function would read a location on your computer, which would differ from that on somebody else’s computer).  
 * GitHub is cloud-based. This is important, because if a researcher’s own device was to stop working, the data and analysis will not be lost.  
+
 With that said, git and GitHub have their disadvantages. Since they keep the whole history of a project, if that history is very long and contains many big files, the performance of GitHub might suffer. Unfortunately, if a user does need a large file, it cannot be uploaded, because the maximum file size for GitHub repository upload is 50 MB. This could be a problem for individuals dealing with very large datasets. In addition, although git is open-use, the paid versions of GitHub can be expensive. Lastly, git and GitHub are arguably not very intuitive to use, so it takes a while for researchers to get accustomed to dealing with them. Difficulties may include the number of steps necessary to push a change from Posit cloud to GitHub, the number and complexity of windows that appear when one wants to merge branches, etc. 
 
 
