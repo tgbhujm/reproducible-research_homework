@@ -3,7 +3,7 @@
 \# INSERT ANSWERS HERE #
 
 QUESTIONS 1, 2 and 3:  
-* Link to the logistic_growth repo: 
+* Link to the logistic_growth repo: https://github.com/tgbhujm/logistic_growth.git  
 
 QUESTION 4:
 * A script for simulating a random_walk is provided in the question-4-code folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)
