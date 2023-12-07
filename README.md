@@ -12,6 +12,7 @@ The random walk function creates a data frame containing three columns: the firs
 In this example, the random walk function is run twice. But despite n being specified as 500 in both cases, the two plots and hence two paths are different. This is because even though the starting point is the same, the subsequent angles at which the object moves are chosen at random, which in turn specify the direction of movement. Each line linking consecutive positions is of the same length (0.25, specified in the function), which explains why the object does not make jumps of different lengths.
 * Investigate the term random seeds. What is a random seed and how does it work? (5 points)  
 * Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)  
+
 Done - see below  
 * Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)  
 ![Q4_comparing_commits](https://github.com/tgbhujm/reproducible-research_homework/assets/150151014/fd94e31b-4b1a-406f-9a1a-54d7fe0ef0d8)
