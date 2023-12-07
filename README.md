@@ -31,7 +31,8 @@ V = βL^α is a multiplicative equation – therefore, it becomes linear when it
 * Find the exponent (α) and scaling factor (β) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant? Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
   
 lnV = lnβ + αlnL is a linear equation where α is the slope and lnβ the intercept. We can use linear regression to model the equation. When running the summary function on the lm(lnV ~ lnL), we get 1.5152 as a value for the exponent α (slope), and 7.0748 as a value for lnβ (intercept). Therefore, the scaling factor β is e^7.0748 = 1181.8071. When rounded, both α and β match the values in Table 2 of the paper by Cui et al., 2014 for dsDNA viruses: α = 1.52, β = 1182.  
-The p-values from the model are 2.28e-10 for the intercept (lnβ), and 6.44e-10 for the slope (α). Both values are statistically significant, because they are well below the threshold of 0.05 (which is usually used for analyzing biological data).
+The p-values from the model are 2.28e-10 for the intercept (lnβ), and 6.44e-10 for the slope (α). Both values are statistically significant, because they are well below the threshold of 0.05 (which is usually used for analyzing biological data).  
+(NOTE: SEE FILE "question-5-code" FOR THE ACTUAL CODE)  
 * Write the code to reproduce the figure shown below. (10 points)  
   
 ggplot(data = cui_new, aes(x = lnL, y = lnV))+  
