@@ -13,6 +13,8 @@ In this example, the random walk function is run twice. But despite n being spec
 * Investigate the term random seeds. What is a random seed and how does it work? (5 points)  
 * Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)  
 * Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)  
+![Q4_comparing_commits](https://github.com/tgbhujm/reproducible-research_homework/assets/150151014/fd94e31b-4b1a-406f-9a1a-54d7fe0ef0d8)
+
 
 QUESTION 5:
 
