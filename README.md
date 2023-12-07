@@ -43,6 +43,7 @@ ggplot(data = cui_new, aes(x = lnL, y = lnV))+
         axis.title.y = element_text(face="bold", size = 9.5))+  
   geom_smooth(method = "lm", size = 0.6, fullrange = TRUE)  
 
+The resulting figure is as shown:  
 ![Q5_recreateplot](https://github.com/tgbhujm/reproducible-research_homework/assets/150151014/9216ef86-7f6c-4445-98e9-d319e33d08b1)  
 
 * What is the estimated volume of a 300 kb dsDNA virus? (4 points)
