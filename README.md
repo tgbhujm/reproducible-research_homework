@@ -42,6 +42,9 @@ ggplot(data = cui_new, aes(x = lnL, y = lnV))+
   theme(axis.title.x = element_text(face="bold", size = 9.5),  
         axis.title.y = element_text(face="bold", size = 9.5))+  
   geom_smooth(method = "lm", size = 0.6, fullrange = TRUE)  
+
+![Q5_recreateplot](https://github.com/tgbhujm/reproducible-research_homework/assets/150151014/9216ef86-7f6c-4445-98e9-d319e33d08b1)  
+
 * What is the estimated volume of a 300 kb dsDNA virus? (4 points)
   
 Using the equation V = βL^α, and the values α = 1.52, β = 1182 for the exponent and scaling factor respectively, we can estimate the volume of a dsDNA virus with a 300 kb long genome:  
