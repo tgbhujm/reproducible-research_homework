@@ -3,10 +3,11 @@
 \# INSERT ANSWERS HERE #
 
 QUESTIONS 1, 2 and 3:  
-Link to the logistic_growth repo: 
+* Link to the logistic_growth repo: 
 
 QUESTION 4:
-* A script for simulating a random_walk is provided in the question-4-code folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)  
+* A script for simulating a random_walk is provided in the question-4-code folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)
+  
 The random walk function creates a data frame containing three columns: the first one is the x-coordinates of an object, the second one is its y-coordinates, and the third one is time. The number of rows is n, where n is the number of timepoint at which the position of the object is recorded. The starting point of the function is set – c(0,0,1) means that the initial coordinates of the object at time 1 are (0,0). The subsequent coordinates are determined by randomly assigning an angle at which the object moves in 2D space. When plotted using ggplot, this yields a coordinate system with the path of the object; the color of the path changes with time, which makes it easier to visually track the movement of the object.
 In this example, the random walk function is run twice. But despite n being specified as 500 in both cases, the two plots and hence two paths are different. This is because even though the starting point is the same, the subsequent angles at which the object moves are chosen at random, which in turn specify the direction of movement. Each line linking consecutive positions is of the same length (0.25, specified in the function), which explains why the object does not make jumps of different lengths.
 * Investigate the term random seeds. What is a random seed and how does it work? (5 points)  
