@@ -47,7 +47,10 @@ ggplot(data = cui_new, aes(x = lnL, y = lnV))+
 Using the equation V = βL^α, and the values α = 1.52, β = 1182 for the exponent and scaling factor respectively, we can estimate the volume of a dsDNA virus with a 300 kb long genome:  
 V = βL^α => V = 1182 x 300^1.52 => V = 6 884 014.62 nm3
 
+BONUS QUESTION (10 points):  
+* Explain the diﬀerence between reproducibility and replicability in scientiﬁc research. How can git and GitHub be used to enhance the reproducibility and replicability of your work? what limitations do they have? (e.g. check the platform protocols.io).
 
+B
 
 ## Instructions
 
